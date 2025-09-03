@@ -1,0 +1,34 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        # Use Node 20 (Amplify's current version)
+        - nvm use 20
+        # Enable corepack for pnpm support
+        - corepack enable
+        # Clear any existing pnpm installation conflicts
+        - npm uninstall -g pnpm || true
+        - rm -rf /root/.nvm/versions/node/v20.19.4/bin/pnpm || true
+        - rm -rf /root/.nvm/versions/node/v20.19.4/bin/pnpx || true
+        # Install pnpm cleanly
+        - npm install -g pnpm@10.15.0 --force
+        # Verify pnpm installation
+        - pnpm --version
+        # Install dependencies
+        - pnpm install
+    build:
+      commands:
+        # Build the Next.js app (static export)
+        - pnpm build
+        # Create a dummy required-server-files.json to satisfy Amplify
+        - echo '{}' > out/required-server-files.json
+  artifacts:
+    # Next.js static export goes to 'out' directory
+    baseDirectory: out
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .next/cache/**/*
