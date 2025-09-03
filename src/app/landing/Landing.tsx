@@ -697,61 +697,64 @@ export default function Landing() {
           ))}
         </div> */}
       </div>
-
+      
       {/* Footer Navigation Sections */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-        {[
-          {
-            title: "Navigation",
-            links: [
-              { name: "Home", href: "/" },
-              { name: "Privacy", href: "/privacy" },
-              { name: "Terms", href: "/terms" },
-              // { name: "Contact", href: "/contact" },
-              { name: "Signup", href: "http://sandbox.elseif.ai/signin" }
-            ]
-          },
-          // {
-          //   title: "Community",
-          //   links: [
-          //     { name: "Partner", href: "/" },
-          //     { name: "Support", href: "/" },
-          //     { name: "Talk to us", href: "/" },
-          //     { name: "Join us", href: "/" }
-          //   ]
-          // },
-          // {
-          //   title: "Agreements",
-          //   links: [
-          //     { name: "Cookie Settings", href: "/" },
-          //     { name: "Data Protection Agreement", href: "/" },
-          //     { name: "Marketplace Agreement", href: "/" }
-          //   ]
-          // },
-          // {
-          //   title: "Certification",
-          //   links: [
-          //     { name: "ISO", href: "/certifications/iso" },
-          //     { name: "SOC2", href: "/certifications/soc2" },
-          //     { name: "GDPR", href: "/certifications/gdpr" }
-          //   ]
-          // }
-        ].map((section) => (
-          <div key={section.title}>
-            <h4 className="font-semibold text-white mb-4">{section.title}</h4>
-            <ul className="space-y-3">
-              {section.links.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-white/60 hover:text-white transition-colors">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+  {[
+    {
+      title: "Navigation",
+      links: [
+        { name: "Home", href: "/" },
+        { name: "Privacy", href: "/privacy" },
+        { name: "Terms", href: "/terms" },
+        // { name: "Contact", href: "/contact" },
+        { name: "Signup", href: "http://sandbox.elseif.ai/signin" }
+      ]
+    },
+    // {
+    //   title: "Community",
+    //   links: [
+    //     { name: "Partner", href: "/" },
+    //     { name: "Support", href: "/" },
+    //     { name: "Talk to us", href: "/" },
+    //     { name: "Join us", href: "/" }
+    //   ]
+    // },
+    // {
+    //   title: "Agreements",
+    //   links: [
+    //     { name: "Cookie Settings", href: "/" },
+    //     { name: "Data Protection Agreement", href: "/" },
+    //     { name: "Marketplace Agreement", href: "/" }
+    //   ]
+    // },
+    // {
+    //   title: "Certification",
+    //   links: [
+    //     { name: "ISO", href: "/certifications/iso" },
+    //     { name: "SOC2", href: "/certifications/soc2" },
+    //     { name: "GDPR", href: "/certifications/gdpr" }
+    //   ]
+    // }
+  ].map((section) => (
+    <div key={section.title}>
+      <h4 className="font-semibold text-white mb-4">{section.title}</h4>
+      {/* Modified: single row instead of vertical list */}
+      <div className="flex items-center gap-8">
+        {section.links.map((link) => (
+          <Link
+            key={link.name}
+            href={link.href}
+            className="text-white/60 hover:text-white transition-colors"
+          >
+            {link.name}
+          </Link>
         ))}
       </div>
     </div>
+  ))}
+</div>
+      </div>
 
     {/* Bottom row */}
     <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -767,3 +770,4 @@ export default function Landing() {
   )
 
 }
+
