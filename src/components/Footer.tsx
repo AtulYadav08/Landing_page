@@ -43,23 +43,23 @@ export default function Footer() {
               { name: "Signup", href: "http://sandbox.elseif.ai/signin" }
             ]
           },
-          {
-            title: "Community",
-            links: [
-              { name: "Partner", href: "/" },
-              { name: "Support", href: "/" },
-              { name: "Talk to us", href: "/" },
-              { name: "Join us", href: "/" }
-            ]
-          },
-          {
-            title: "Agreements",
-            links: [
-              { name: "Cookie Settings", href: "/" },
-              { name: "Data Protection Agreement", href: "/" },
-              { name: "Marketplace Agreement", href: "/" }
-            ]
-          },
+          // {
+          //   title: "Community",
+          //   links: [
+          //     { name: "Partner", href: "/" },
+          //     { name: "Support", href: "/" },
+          //     { name: "Talk to us", href: "/" },
+          //     { name: "Join us", href: "/" }
+          //   ]
+          // },
+          // {
+          //   title: "Agreements",
+          //   links: [
+          //     { name: "Cookie Settings", href: "/" },
+          //     { name: "Data Protection Agreement", href: "/" },
+          //     { name: "Marketplace Agreement", href: "/" }
+          //   ]
+          // },
           // {
           //   title: "Certification",
           //   links: [
@@ -95,3 +95,4 @@ export default function Footer() {
 </footer>
   )
 }
+
