@@ -448,8 +448,8 @@ export default function AIStartups() {
                 <li><Link href="#events" className="text-white/60 hover:text-white transition-colors">Events</Link></li>
                 <li><Link href="#contact" className="text-white/60 hover:text-white transition-colors">Contact</Link></li>
               </ul>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
 
           <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-white/50 text-sm">
@@ -466,3 +466,4 @@ export default function AIStartups() {
   )
 
 }
+
