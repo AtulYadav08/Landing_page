@@ -343,32 +343,32 @@ export default function Landing() {
       </section>
 
       {/* Why Elseif Section */}
-      <section className="container mx-auto px-6 py-24">
+    <section className="container mx-auto px-6 py-24">
         <div className={`text-center mb-16 ${styles.reveal} ${styles.scale}`}>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Why choose Elseif
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Elseif is the leading LLMOps platform that enables developers and non-tech teams to build, deploy and operate AI apps.
+            Elseif is the leading ElseifAI platform that enables developers and non-tech teams to build, deploy and operate AI apps.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {[
             {
-              icon: "🎨",
+              icon: <AnimatedBrainIcon />,
               title: "Visual Orchestration",
               description: "Design complex AI workflows with our intuitive visual canvas. Drag, drop, and connect nodes to build sophisticated applications without coding.",
               features: ["Visual workflow builder", "Pre-built templates", "Custom components"]
             },
             {
-              icon: "🚀",
+              icon: <AnimatedRocketIcon />,
               title: "Ready-to-Use",
               description: "Deploy production-ready AI applications in minutes. From chatbots to content generators, get started with proven templates.",
               features: ["One-click deployment", "Built-in hosting", "Instant scaling"]
             },
             {
-              icon: "🔧",
+              icon: <AnimatedGearsIcon />,
               title: "Full Customization", 
               description: "Complete control over your AI applications. Customize every aspect from model selection to user experience.",
               features: ["Multiple LLM support", "Custom branding", "Advanced configurations"]
@@ -413,28 +413,28 @@ export default function Landing() {
           <div className="grid lg:grid-cols-2 gap-8">
             {[
               {
-                icon: "💬",
+                icon: <AnimatedChatbotIcon />,
                 title: "AI Chatbots",
                 description: "Create intelligent conversational agents that understand context and provide meaningful responses.",
                 image: "chat",
                 features: ["Multi-turn conversations", "Context awareness", "Custom personalities"]
               },
               {
-                icon: "🤖",
+                icon: <AnimatedAgentIcon />,
                 title: "AI Agents",
                 description: "Build autonomous agents that can perform complex tasks and make decisions on behalf of users.",
                 image: "agent",
                 features: ["Goal-oriented behavior", "Tool integration", "Multi-step reasoning"]
               },
               {
-                icon: "📚",
+                icon: <AnimatedRAGIcon />,
                 title: "RAG Applications", 
                 description: "Transform your knowledge base into intelligent systems that answer questions and provide insights.",
                 image: "rag",
                 features: ["Document processing", "Semantic search", "Source attribution"]
               },
               {
-                icon: "✨",
+                icon: <AnimatedContentIcon />,
                 title: "Content Generation",
                 description: "Generate high-quality content at scale with AI-powered writing and creative applications.",
                 image: "content",
@@ -482,42 +482,42 @@ export default function Landing() {
         <div className="grid lg:grid-cols-4 gap-6">
           {[
             {
-              icon: "⚡",
+               icon: <AnimatedModelIcon />,
               title: "Model Management",
               description: "Support for 100+ LLMs including GPT, Claude, Gemini, and open-source models."
             },
             {
-              icon: "📊",
+              icon: <AnimatedObservabilityIcon />,
               title: "Observability",
               description: "Monitor performance, costs, and user interactions with detailed analytics."
             },
             {
-              icon: "🔒",
+              icon: <AnimatedSecurityIcon />,
               title: "Security & Privacy",
               description: "Enterprise-grade security with data encryption and privacy controls."
             },
             {
-              icon: "🌍",
+              icon: <AnimatedGlobeIcon />,
               title: "Multi-Language",
               description: "Built-in support for multiple languages and international deployment."
             },
             {
-              icon: "🔗",
+              icon: <AnimatedAPIIcon />,
               title: "API Access",
               description: "RESTful APIs and SDKs for seamless integration with existing systems."
             },
             {
-              icon: "📈",
+              icon: <AnimatedScalingIcon />,
               title: "Auto Scaling",
               description: "Automatic scaling based on demand with cost optimization."
             },
             {
-              icon: "🛠️",
+              icon: <AnimatedDevOpsIcon />,
               title: "DevOps Ready",
               description: "CI/CD pipelines, version control, and collaborative development."
             },
             {
-              icon: "💡",
+               icon: <AnimatedRoutingIcon />,
               title: "Smart Routing",
               description: "Intelligent load balancing and model selection based on context."
             }
@@ -770,4 +770,5 @@ export default function Landing() {
   )
 
 }
+
 
