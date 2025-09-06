@@ -6,6 +6,24 @@ import { useEffect, useState, useRef } from 'react'
 import styles from './landing.module.css'
 import { initParallaxGlows, initTilt, initParallaxCards } from './landing.motion'
 import { StickyScroll } from '@/components/StickyScrollReveal'
+import { 
+  AnimatedBrainIcon, 
+  AnimatedRocketIcon, 
+  AnimatedGearsIcon,
+  AnimatedChatbotIcon,
+  AnimatedAgentIcon, 
+  AnimatedRAGIcon,
+  AnimatedContentIcon,
+  AnimatedModelIcon,
+  AnimatedObservabilityIcon,
+  AnimatedSecurityIcon,
+  AnimatedGlobeIcon,
+  AnimatedAPIIcon,
+  AnimatedScalingIcon,
+  AnimatedDevOpsIcon,
+  AnimatedRoutingIcon 
+} from '@/components/AnimatedIcons'
+
 
 const featuresContent = [
   {
@@ -770,5 +788,6 @@ export default function Landing() {
   )
 
 }
+
 
 
